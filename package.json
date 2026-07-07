@@ -1,0 +1,15 @@
+{
+  "name": "blazedemo147adv",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0",
+    "playwright-bdd": "^9.2.0"
+  }
+}
