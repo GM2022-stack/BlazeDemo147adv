@@ -33,3 +33,7 @@ Nomeclatura
 
 - Cucumber/Behave/SpecFlow são exemplos de plugins que fazem a integração entre arquivos .features 
 com arquivos .spec.js
+
+
+Em um projeto simples, cada reste é um arquivo .spec.js diferente
+Em um projeto com Gherkin, cada teste é composto por um arquivo .feature + um arquivo steps.js

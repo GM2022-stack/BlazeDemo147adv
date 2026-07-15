@@ -2,7 +2,11 @@
   "name": "blazedemo147adv",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:bdd": "cucumber-js features/**/*.feature --require steps/**/*.js --require support/**/*.js --format json:reposts/cucumber-report.json",
+    "report": "node generate-report.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -10,6 +14,10 @@
   "devDependencies": {
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.1.0",
+    "cucumber-html-reporter": "^7.2.0",
     "playwright-bdd": "^9.2.0"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^12.9.0"
   }
 }
