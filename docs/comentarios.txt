@@ -34,6 +34,10 @@ Nomeclatura
 - Cucumber/Behave/SpecFlow são exemplos de plugins que fazem a integração entre arquivos .features 
 com arquivos .spec.js
 
+- Page Objects / Page Factory: separar o mapeamento dos elementos da interface gráfica (páginas, telas) do código da automação
+--> Pages com mapeamento de elementos
+--> Steps com os scripts de automação
+--> features com os cenários de testes
 
 Em um projeto simples, cada reste é um arquivo .spec.js diferente
 Em um projeto com Gherkin, cada teste é composto por um arquivo .feature + um arquivo steps.js
