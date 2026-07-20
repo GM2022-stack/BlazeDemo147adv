@@ -17,9 +17,14 @@ export default class HomePage {
     async selecionar_destino(cidade_destino) {
         await this.page.locator(this.destino).selectOption(cidade_destino)
     }
-
+// Este seria para o exemplo sem parametro
     async clicar_Find_flights(){
         await this.page.locator(this.btnFindFlights).click()
+    }
+    
+    // Este seria para o exemplo com parametro (texto no botão)
+async clicar_Find_flights(texto_botao){
+        await this.page.getByRole('button', { name: texto_botao }).click()
     }
 
     // Jeito "Rebelde" de verificação dentro do mapeamento
