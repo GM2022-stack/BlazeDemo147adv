@@ -1,5 +1,5 @@
-export default class ConfirmationPage {
-
+//export default class ConfirmationPage {
+class ConfirmationPage {
     constructor(page){
         this.page = page
         this.url = '/confirmation\.php/'
@@ -8,3 +8,5 @@ export default class ConfirmationPage {
     }
 
 }
+
+module.exports = ConfirmationPage

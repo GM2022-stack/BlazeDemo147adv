@@ -1,4 +1,5 @@
-export default class HomePage {
+//export default class HomePage { // padrão para type = module
+class HomePage {                 // padrão para type = commonjs
     // Construtor com o mapeamento dos elementos
     constructor(page) {
         this.page = page   // o objetos do Playwright interno recebe o objeto page do Playwright externo
@@ -41,3 +42,5 @@ async clicar_Find_flights(texto_botao){
     }
 
 }
+
+module.exports = HomePage // padrão quando type = commonjs

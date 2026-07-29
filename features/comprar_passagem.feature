@@ -3,8 +3,8 @@ Funcionalidade: Comprar passagem
     Cenario: Compra com Sucesso
         Dado que estou no site Blazedemo
         Quando seleciono a origem como "São Paolo" 
-        E o Destiono como "London"
-        E clico no botão "Find Flights"
+        E o Destino como "London"
+        E clico no botao "Find Flights"
         Entao verifico o texto "Flights from São Paolo to London:"
         E verifico se a url contem "reserve"
         Quando seleciono o voo "9696" da companhia "Aer Lingus"
@@ -20,8 +20,8 @@ Funcionalidade: Comprar passagem
     Esquema do Cenario: Compra com Sucesso DDT 
         Dado que estou no site Blazedemo
         Quando seleciono a origem como "<origem>" 
-        E o Destiono como "<destino>"
-        E clico no botão "Find Flights"
+        E o Destino como "<destino>"
+        E clico no botao "Find Flights"
         Entao verifico o texto "Flights from "<origem>" to "<destino>"
         E verifico se a url contem "reserve"
         Quando seleciono o voo "9696" da companhia "<companhia>"
@@ -38,4 +38,4 @@ Funcionalidade: Comprar passagem
     | origem     | destino   |  voo  | companhia       | nome          | bandeira           | preco    |
     | São Paolo  | London    | 9696  | Aer Lingus      | Guilherme     | Visa               | 555  USD |
     | Portland   | Dublin    | 12    | Virgin America  | Charlie Brown | American Express   | 555  USD |
-    | Boston     | New York  | 4346  | Lufthansa       | Peter Parker  | Dinner's Club      | 555  USD |
+    | Boston     | New York  | 4346  | Lufthansa       | Peter Parker  | Diner's Club      | 555  USD |

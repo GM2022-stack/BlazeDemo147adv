@@ -1,5 +1,5 @@
-export default class ReservePage {
-    
+//export default class ReservePage {
+class ReservePage {    
     constructor(page){
         this.page = page
         this.titulo = 'h3'
@@ -19,7 +19,7 @@ export default class ReservePage {
         }
     }
 
-    
+
     async verificar_titulo(mensagem_origem_destino){
         await this.page.waitForSelector(this.titulo)
         const tituloSecao = await this.page.textContent(this.titulo)
@@ -39,3 +39,5 @@ export default class ReservePage {
     }
 
 }
+
+module.exports = ReservePage

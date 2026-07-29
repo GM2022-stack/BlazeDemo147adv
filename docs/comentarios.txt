@@ -1,7 +1,7 @@
 Instalação Padrão do playwright
 npm init playwright@latest
 
-Nosso projeto utilizará as seguintes abordagens:
+O projeto utilizará as seguintes abordagens:
 - Separação dos cenários de negócio dos scripts de automação
  - vamos precisar de no mímino 2 arquivos
  ---> pasta features, que contém arquivos .feature - Funcionalidades e Cenários de negócios  / Critérios de Aceitação / Dados
@@ -41,3 +41,29 @@ com arquivos .spec.js
 
 Em um projeto simples, cada reste é um arquivo .spec.js diferente
 Em um projeto com Gherkin, cada teste é composto por um arquivo .feature + um arquivo steps.js
+
+
+
+Dependencias removidas:
+"playwright-bdd": "^9.2.0"
+"@types/node": "^26.1.0",
+
+
+Diferencia de sintaxe conforme o type definido no package.json
+
+commonjs --> const ...= require('...')
+module   --> import ... from ...
+
+
+Sobre execução sincrona (uma parte espera a outra / Ex. do telefone) e assincrona (a parte emissora não espera / Ex. da mensagem de WhatsApp)
+
+Sem async/await: transação sincrona
+com async/await: transação assincrona
+
+estou usando 2 frameworks
+- Playwright (controla o browser) --> timeout (mensagem especifica que pode explicar a causa)
+- CucumberJS (organização) --> timeout (mensagem genérica que não vai explicar a causa)
+
+Situação da aula: funcionava sem o await e não funcionava com o await 
+
+
