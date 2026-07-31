@@ -64,6 +64,6 @@ estou usando 2 frameworks
 - Playwright (controla o browser) --> timeout (mensagem especifica que pode explicar a causa)
 - CucumberJS (organização) --> timeout (mensagem genérica que não vai explicar a causa)
 
-Situação da aula: funcionava sem o await e não funcionava com o await 
+funcionava sem o await e não funcionava com o await 
 
 
