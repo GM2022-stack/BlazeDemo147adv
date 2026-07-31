@@ -4,12 +4,12 @@ class PurchasePage {
         this.page = page
         this.url = '/purchase\.php/'
         this.nome = '#inputName'
-        this.bandeira = '#CardType'
+        this.bandeira = '#cardType'
         this.remenber = '#rememberMe'
         this.btn_purchase_flight = 'btn.btn-primary'    
     }
 
-    // Como neste mapeamento estamos seguindo o padrão, não inclui verificação
+    // Como neste mapeamento estou seguindo o padrão, não inclui verificação
 
     async preencher_nome(nome){
         await this.page.locator(this.nome).fill(nome)

@@ -90,6 +90,6 @@ Then('se contem a informacao {string} como {string}', async function (quantia, p
 
 // Esquema de Cenário - Verifica a mensagem contendo as duas cidades que recebe como paramentro
 Then('verifico o texto Flights from {string} to {string}', async function (origem, destino) {
-    await expect(page.locator(this.reservePage.titulo)).toHaveText(`Flights from ${origem} to ${destino}:`)
+    await expect(this.page.locator(this.reservePage.titulo)).toHaveText(`Flights from ${origem} to ${destino}:`)
 });
 
