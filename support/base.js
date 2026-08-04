@@ -1,11 +1,11 @@
-const { setWorldConstructor } = require('@cucumber/cucumber')
+const { setWorldConstructor, World } = require('@cucumber/cucumber')
 const { chromium, firefox, webkit } = require('@playwright/test')
 const HomePage = require('../pages/home.page')
 const ReservePage = require('../pages/reserve.page')
 const PurchasePage = require('../pages/purchase.page')
 const ConfirmationPage = require('../pages/confirmation.page')
 
-class Base {
+class Base extends World {
     async abrir_browser() {
     // async abrir_browser(browser_desejado) {    
         const browser_name = process.env.BROWSER || 'chromium'
